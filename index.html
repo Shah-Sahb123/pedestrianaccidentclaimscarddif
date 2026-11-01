@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cardiff Pavement Parking Accident Claims</title>
+    <meta name="description" content="Learn how pavement parking can cause pedestrian accidents in Cardiff, who may be responsible, what evidence to collect and how compensation claims work.">
+    <meta name="google-site-verification" content="X8XxLPj6QomGBxEgdnNdP0zHz4J8qhFkXrFt0_UiTGw" />
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#252c35">
+
+    <style>
+        :root {
+            --graphite: #252c35;
+            --graphite-dark: #19212a;
+            --graphite-mid: #343e49;
+            --blue: #a9c9e5;
+            --blue-bright: #8bb8df;
+            --blue-pale: #eaf2f8;
+            --blue-light: #d5e5f1;
+            --paper: #f7f8fa;
+            --white: #ffffff;
+            --ink: #171a1e;
+            --muted: #68717b;
+            --border: #dce2e8;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 35px;
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .page-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* =========================================
+           CUSTOM GRAPHITE HEADER
+        ========================================= */
+
+        .site-header {
+            position: relative;
+            min-height: 510px;
+            overflow: hidden;
+            background: var(--graphite);
+            color: var(--white);
+            padding: 0 6.5% 70px;
+            isolation: isolate;
+        }
+
+        .site-header::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 670px;
+            height: 670px;
+            right: -250px;
+            top: -370px;
+            border: 1px solid rgba(169, 201, 229, 0.25);
+            border-radius: 50%;
+            box-shadow:
+                0 0 0 45px rgba(169, 201, 229, 0.035),
+                0 0 0 95px rgba(169, 201, 229, 0.03),
+                0 0 0 145px rgba(169, 201, 229, 0.025);
+        }
+
+        .site-header::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            right: 8%;
+            bottom: -190px;
+            width: 390px;
+            height: 390px;
+            border: 1px solid rgba(169, 201, 229, 0.18);
+            transform: rotate(45deg);
+        }
+
+        .header-inner {
+            max-width: 1370px;
+            margin: 0 auto;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            min-height: 88px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+        }
+
+        .site-brand {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            text-decoration: none;
+        }
+
+        .brand-symbol {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 43px;
+            height: 43px;
+            border: 1px solid var(--blue);
+            border-radius: 50%;
+            color: var(--blue);
+            font-size: 19px;
+            font-weight: 300;
+        }
+
+        .brand-symbol::after {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            right: -3px;
+            top: 1px;
+            border-radius: 50%;
+            background: var(--blue-bright);
+        }
+
+        .brand-name {
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1.15px;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+
+        .header-location {
+            color: #c3d0dc;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-align: right;
+            text-transform: uppercase;
+        }
+
+        /* HEADER HERO */
+
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 340px;
+            align-items: center;
+            gap: 55px;
+            padding-top: 76px;
+        }
+
+        .hero-copy {
+            animation: heroEntry 0.8s ease both;
+        }
+
+        .hero-kicker {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 23px;
+            color: var(--blue);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+        }
+
+        .hero-kicker::before {
+            content: "";
+            width: 36px;
+            height: 2px;
+            background: var(--blue-bright);
+        }
+
+        .hero h1 {
+            max-width: 850px;
+            margin: 0;
+            color: #ffffff;
+            font-size: clamp(34px, 5vw, 60px);
+            line-height: 1.13;
+            letter-spacing: -1.8px;
+            font-weight: 800;
+        }
+
+        .hero-description {
+            max-width: 700px;
+            margin: 24px 0 0;
+            color: #d6dde5;
+            font-size: 16px;
+            line-height: 1.85;
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .hero-tags span {
+            padding: 8px 13px;
+            border: 1px solid rgba(169, 201, 229, 0.35);
+            border-radius: 3px;
+            color: #e2eaf1;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* ABSTRACT PEDESTRIAN GRAPHIC */
+
+        .hero-art {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 310px;
+            overflow: hidden;
+            border-left: 1px solid rgba(169, 201, 229, 0.22);
+            border-right: 1px solid rgba(169, 201, 229, 0.22);
+            animation: artEntry 1s ease 0.15s both;
+        }
+
+        .art-circle {
+            position: absolute;
+            width: 235px;
+            height: 235px;
+            border: 1px solid rgba(169, 201, 229, 0.45);
+            border-radius: 50%;
+        }
+
+        .art-circle::before {
+            content: "";
+            position: absolute;
+            inset: 17px;
+            border: 1px dashed rgba(169, 201, 229, 0.5);
+            border-radius: 50%;
+        }
+
+        .art-circle::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -15px;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--blue);
+        }
+
+        .art-letter {
+            position: relative;
+            z-index: 2;
+            color: var(--blue);
+            font-size: 155px;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -12px;
+            text-shadow: 12px 12px 0 rgba(169, 201, 229, 0.1);
+        }
+
+        .art-label {
+            position: absolute;
+            bottom: 13px;
+            right: 10px;
+            color: #b7c9d9;
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero-bottom {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            margin-top: 57px;
+            color: #b9c7d3;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero-bottom::before {
+            content: "";
+            width: 48px;
+            height: 1px;
+            background: var(--blue);
+        }
+
+        /* =========================================
+           BLUE INFORMATION BAND
+        ========================================= */
+
+        .information-band {
+            background: var(--blue-light);
+            padding: 19px 6.5%;
+        }
+
+        .information-inner {
+            max-width: 1370px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px 25px;
+        }
+
+        .information-heading {
+            color: var(--graphite);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .information-description {
+            color: #424f5c;
+            font-size: 13px;
+        }
+
+        /* =========================================
+           MAIN CONTENT AREA
+        ========================================= */
+
+        .content-layout {
+            max-width: 1370px;
+            margin: 0 auto;
+            padding: 65px 30px 90px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 290px;
+            gap: 55px;
+            align-items: start;
+        }
+
+        .article {
+            min-width: 0;
+            background: var(--white);
+            border: 1px solid #e1e5e9;
+            box-shadow: 0 12px 45px rgba(35, 46, 57, 0.055);
+        }
+
+        .article-inner {
+            padding: 52px 57px 60px;
+        }
+
+        .article p {
+            margin: 0 0 21px;
+            color: #171a1e;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .article h2 {
+            position: relative;
+            margin: 55px 0 22px;
+            padding: 0 0 16px;
+            color: var(--graphite);
+            border-bottom: 1px solid #dce3e9;
+            font-size: clamp(23px, 3vw, 29px);
+            line-height: 1.34;
+            font-weight: 800;
+            letter-spacing: -0.55px;
+        }
+
+        .article h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 58px;
+            height: 3px;
+            background: var(--blue-bright);
+        }
+
+        .article h3 {
+            margin: 32px 0 13px;
+            color: var(--graphite);
+            font-size: 19px;
+            font-weight: 800;
+            line-height: 1.45;
+        }
+
+        .article strong {
+            color: #202a34;
+            font-weight: 800;
+        }
+
+        /* ARTICLE LISTS */
+
+        .article ul {
+            margin: 16px 0 27px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .article li {
+            position: relative;
+            margin: 0 0 12px;
+            padding: 14px 17px 14px 47px;
+            background: #f0f5f9;
+            border: 1px solid #e1eaf1;
+            color: #171a1e;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .article li::before {
+            content: "";
+            position: absolute;
+            left: 17px;
+            top: 21px;
+            width: 13px;
+            height: 13px;
+            border: 2px solid #7398b9;
+            border-radius: 50%;
+            background: #ffffff;
+        }
+
+        /* =========================================
+           FEATURE IMAGE FRAME
+        ========================================= */
+
+        .article-image-wrap {
+            position: relative;
+            margin: 48px 0;
+            padding: 11px;
+            background: var(--blue-pale);
+            border: 1px solid #cdddea;
+        }
+
+        .article-image-wrap::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: -6px;
+            right: 20px;
+            width: 76px;
+            height: 5px;
+            background: var(--blue-bright);
+        }
+
+        .article-image-wrap::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            left: -6px;
+            bottom: 20px;
+            width: 5px;
+            height: 76px;
+            background: var(--blue-bright);
+        }
+
+        .article-image-wrap img {
+            display: block;
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            aspect-ratio: 1200 / 700;
+            margin: 0 auto;
+        }
+
+        /* =========================================
+           SIDEBAR CONTENT NAVIGATION
+        ========================================= */
+
+        .sidebar {
+            position: sticky;
+            top: 25px;
+        }
+
+        .sidebar-panel {
+            background: var(--graphite);
+            color: #ffffff;
+            padding: 28px 23px 24px;
+            border-radius: 2px;
+            box-shadow: 8px 8px 0 var(--blue-light);
+        }
+
+        .sidebar-overline {
+            margin: 0 0 9px;
+            color: var(--blue);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .sidebar-panel h2 {
+            margin: 0 0 21px;
+            color: #ffffff;
+            font-size: 23px;
+            line-height: 1.3;
+        }
+
+        .sidebar-links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-links a {
+            display: block;
+            padding: 11px 9px;
+            border-top: 1px solid rgba(255, 255, 255, 0.13);
+            color: #e1e8ef;
+            font-size: 12px;
+            line-height: 1.5;
+            text-decoration: none;
+            transition: padding-left 0.25s ease, color 0.25s ease, background 0.25s ease;
+        }
+
+        .sidebar-links a:hover {
+            padding-left: 16px;
+            color: var(--blue);
+            background: rgba(255, 255, 255, 0.045);
+        }
+
+        .sidebar-callout {
+            margin-top: 25px;
+            padding: 17px;
+            background: #384652;
+            border-left: 3px solid var(--blue);
+        }
+
+        .sidebar-callout span {
+            display: block;
+            margin-bottom: 7px;
+            color: var(--blue);
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .sidebar-callout p {
+            margin: 0;
+            color: #f0f4f7;
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        /* =========================================
+           CLOSING FEATURE SECTION
+        ========================================= */
+
+        .closing-section {
+            position: relative;
+            margin-top: 60px;
+            padding: 39px 35px;
+            overflow: hidden;
+            background: var(--blue-pale);
+            border: 1px solid #d6e4ef;
+        }
+
+        .closing-section::before {
+            content: "01";
+            position: absolute;
+            right: 8px;
+            bottom: -73px;
+            color: rgba(111, 151, 184, 0.12);
+            font-size: 190px;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -12px;
+        }
+
+        .closing-kicker {
+            position: relative;
+            display: block;
+            margin-bottom: 12px;
+            color: #527797;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .closing-section h2 {
+            position: relative;
+            margin: 0 0 16px;
+            padding: 0;
+            border: 0;
+            color: var(--graphite);
+            font-size: 27px;
+        }
+
+        .closing-section h2::after {
+            display: none;
+        }
+
+        .closing-section p {
+            position: relative;
+            max-width: 730px;
+            margin: 0;
+            color: #171a1e;
+            font-size: 15px;
+        }
+
+        /* =========================================
+           CUSTOM FOOTER
+        ========================================= */
+
+        .site-footer {
+            position: relative;
+            overflow: hidden;
+            background: var(--graphite-dark);
+            color: #ffffff;
+            padding: 65px 6.5% 27px;
+        }
+
+        .site-footer::before {
+            content: "";
+            position: absolute;
+            top: -120px;
+            left: -125px;
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgba(169, 201, 229, 0.22);
+            border-radius: 50%;
+            box-shadow:
+                0 0 0 25px rgba(169, 201, 229, 0.035),
+                0 0 0 55px rgba(169, 201, 229, 0.025);
+        }
+
+        .footer-inner {
+            position: relative;
+            max-width: 1370px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 70px;
+            padding-bottom: 43px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 21px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border: 1px solid var(--blue);
+            color: var(--blue);
+            font-size: 23px;
+            border-radius: 50%;
+        }
+
+        .footer-brand h2 {
+            margin: 0;
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .footer-description {
+            max-width: 570px;
+            margin: 0;
+            color: #cbd4dc;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .footer-right {
+            padding: 6px 0 0 30px;
+            border-left: 1px solid rgba(169, 201, 229, 0.25);
+        }
+
+        .footer-right h3 {
+            margin: 0 0 15px;
+            color: var(--blue);
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .footer-right p {
+            margin: 0;
+            color: #cbd4dc;
+            font-size: 13px;
+            line-height: 1.9;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding-top: 22px;
+        }
+
+        .footer-bottom span {
+            color: #acb9c5;
+            font-size: 11px;
+        }
+
+        .footer-bottom .footer-tagline {
+            color: var(--blue);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* =========================================
+           ANIMATIONS
+        ========================================= */
+
+        @keyframes heroEntry {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes artEntry {
+            from {
+                opacity: 0;
+                transform: translateX(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes circleFloat {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-9px) rotate(3deg);
+            }
+        }
+
+        .art-circle {
+            animation: circleFloat 6s ease-in-out infinite;
+        }
+
+        .closing-section {
+            animation: closingReveal 0.9s ease both;
+        }
+
+        @keyframes closingReveal {
+            from {
+                opacity: 0.6;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* =========================================
+           TABLET RESPONSIVENESS
+        ========================================= */
+
+        @media (max-width: 1050px) {
+            .hero {
+                grid-template-columns: minmax(0, 1fr) 270px;
+                gap: 30px;
+            }
+
+            .content-layout {
+                grid-template-columns: minmax(0, 1fr) 250px;
+                gap: 30px;
+                padding-left: 22px;
+                padding-right: 22px;
+            }
+
+            .article-inner {
+                padding: 40px 35px 48px;
+            }
+
+            .art-letter {
+                font-size: 130px;
+            }
+
+            .art-circle {
+                width: 205px;
+                height: 205px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .site-header {
+                padding: 0 5% 48px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 35px;
+                padding-top: 52px;
+            }
+
+            .hero-art {
+                width: 100%;
+                max-width: 440px;
+                min-height: 260px;
+                margin: 0 auto;
+            }
+
+            .hero-bottom {
+                margin-top: 38px;
+            }
+
+            .content-layout {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding-top: 35px;
+            }
+
+            .sidebar {
+                position: static;
+                order: -1;
+            }
+
+            .sidebar-panel {
+                box-shadow: 5px 5px 0 var(--blue-light);
+            }
+
+            .sidebar-links {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                column-gap: 20px;
+            }
+
+            .footer-main {
+                gap: 35px;
+            }
+        }
+
+        /* =========================================
+           MOBILE RESPONSIVENESS
+        ========================================= */
+
+        @media (max-width: 560px) {
+            body {
+                font-size: 15px;
+            }
+
+            .site-header {
+                padding: 0 19px 39px;
+            }
+
+            .topbar {
+                min-height: 75px;
+                gap: 10px;
+            }
+
+            .brand-symbol {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+
+            .brand-name {
+                max-width: 175px;
+                font-size: 10px;
+                letter-spacing: 0.5px;
+            }
+
+            .header-location {
+                max-width: 105px;
+                font-size: 8px;
+                line-height: 1.6;
+                letter-spacing: 1px;
+            }
+
+            .hero {
+                padding-top: 39px;
+                gap: 28px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+                letter-spacing: -1.1px;
+            }
+
+            .hero-description {
+                font-size: 14px;
+                line-height: 1.8;
+            }
+
+            .hero-tags {
+                gap: 7px;
+                margin-top: 22px;
+            }
+
+            .hero-tags span {
+                padding: 7px 9px;
+                font-size: 9px;
+            }
+
+            .hero-art {
+                min-height: 225px;
+            }
+
+            .art-letter {
+                font-size: 115px;
+            }
+
+            .art-circle {
+                width: 175px;
+                height: 175px;
+            }
+
+            .hero-bottom {
+                font-size: 9px;
+            }
+
+            .information-band {
+                padding: 17px 20px;
+            }
+
+            .information-inner {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            .content-layout {
+                padding: 25px 13px 45px;
+                gap: 22px;
+            }
+
+            .article-inner {
+                padding: 27px 19px 35px;
+            }
+
+            .article p {
+                font-size: 14.5px;
+                line-height: 1.85;
+                margin-bottom: 18px;
+            }
+
+            .article h2 {
+                margin-top: 43px;
+                margin-bottom: 18px;
+                font-size: 22px;
+            }
+
+            .article h3 {
+                margin-top: 26px;
+                font-size: 17px;
+            }
+
+            .article li {
+                padding: 12px 12px 12px 39px;
+                font-size: 14px;
+            }
+
+            .article li::before {
+                left: 13px;
+                top: 19px;
+                width: 11px;
+                height: 11px;
+            }
+
+            .article-image-wrap {
+                margin: 35px 0;
+                padding: 7px;
+            }
+
+            .sidebar-panel {
+                padding: 23px 17px;
+            }
+
+            .sidebar-panel h2 {
+                font-size: 21px;
+            }
+
+            .sidebar-links {
+                grid-template-columns: 1fr;
+            }
+
+            .closing-section {
+                margin-top: 42px;
+                padding: 27px 21px;
+            }
+
+            .closing-section h2 {
+                font-size: 23px;
+            }
+
+            .site-footer {
+                padding: 47px 21px 23px;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 29px;
+            }
+
+            .footer-right {
+                padding: 22px 0 0;
+                border-left: 0;
+                border-top: 1px solid rgba(169, 201, 229, 0.25);
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 7px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!-- =========================================
+         CUSTOM HEADER
+    ========================================== -->
+
+    <header class="site-header">
+        <div class="header-inner">
+
+            <div class="topbar">
+                <a href="https://pedestrianaccidentclaimsukco.uk/" class="site-brand">
+                    <span class="brand-symbol">+</span>
+                    <span class="brand-name">Pedestrian Accident Claims UK</span>
+                </a>
+
+                <div class="header-location">
+                    Cardiff<br>
+                    Pedestrian Injury Guide
+                </div>
+            </div>
+
+            <div class="hero">
+
+                <div class="hero-copy">
+                    <div class="hero-kicker">Pedestrian Safety / Cardiff</div>
+
+                    <h1>Pedestrian Accident Claims Caused by Pavement Parking in Cardiff</h1>
+
+                    <p class="hero-description">
+                        Explore how obstructed pavements can put pedestrians at risk,
+                        who may be responsible for an accident and what steps may help
+                        when considering a pedestrian injury compensation claim.
+                    </p>
+
+                    <div class="hero-tags">
+                        <span>Cardiff Residential Areas</span>
+                        <span>Pedestrian Safety</span>
+                        <span>Personal Injury Guide</span>
+                    </div>
+                </div>
+
+                <div class="hero-art" aria-label="Abstract pedestrian safety graphic">
+                    <div class="art-circle"></div>
+                    <div class="art-letter">P</div>
+                    <div class="art-label">Pedestrian protection / Cardiff</div>
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+                A guide to pavement obstructions and pedestrian claims
+            </div>
+
+        </div>
+    </header>
+
+    <!-- =========================================
+         INFORMATION BAND
+    ========================================== -->
+
+    <section class="information-band">
+        <div class="information-inner">
+            <span class="information-heading">Understand Your Options</span>
+            <span class="information-description">
+                Learn about pavement parking hazards, legal responsibility, evidence and compensation.
+            </span>
+        </div>
+    </section>
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main class="content-layout">
+
+        <article class="article">
+            <div class="article-inner">
+
+                <p>
+                    Pavement parking can make everyday walking difficult and dangerous, particularly on residential streets where vehicles leave little space for pedestrians. A car blocking a footpath may force someone using a wheelchair, pushing a pram or walking with a child to move into the road, where they could be struck by passing traffic. Understanding <a href="https://pedestrianaccidentclaimsukco.uk/near-me/cardiff/">Pedestrian Accident Claims in Carddif</a> can help injured people in Cardiff explore their legal options when unsafe or negligent parking contributes to an accident.
+                </p>
+
+                <p>
+                    A collision caused by an obstructed pavement can have lasting consequences, including fractures, head injuries, time away from work and unexpected medical expenses. However, not every vehicle parked partly on a pavement automatically creates a successful compensation claim. The important questions are whether the parking created an unreasonable danger, whether another party failed to take reasonable care and whether that failure contributed to the injury.
+                </p>
+
+                <h2 id="what-is-pavement-parking">What Is Pavement Parking and Why Can It Be Dangerous?</h2>
+
+                <p>
+                    Pavement parking occurs when a driver leaves a vehicle partly or entirely on a footpath instead of keeping it on the carriageway or in a designated parking space. Drivers sometimes do this on residential streets to make room for passing traffic or because on-street parking is limited. However, even when a vehicle occupies only part of the pavement, it can leave insufficient space for people to walk safely.
+                </p>
+
+                <p>
+                    The problem is particularly serious on streets with narrow footpaths, parked vehicles on both sides and limited alternative walking routes. A pedestrian may have to squeeze between a vehicle and a wall, walk over an uneven verge or step into the road to continue their journey. These situations can expose people to moving traffic and increase the risk of pedestrian accidents.
+                </p>
+
+                <h2 id="cardiff-residential-areas">Pavement Parking Problems in Cardiff Residential Areas</h2>
+
+                <p>
+                    Pavement parking can affect different residential communities across Cardiff, particularly where streets have limited parking space and narrow pedestrian routes. Areas such as Grangetown, Canton, Cathays, Splott and Roath have different street layouts, but the general problem can arise wherever parked vehicles reduce the space available to pedestrians. The risk depends on the actual road layout, the amount of obstruction and how much room remains for people to pass.
+                </p>
+
+                <p>
+                    Grangetown has received particular attention in local reporting. A March 2026 report described residents' concerns about vehicles blocking pavements on streets including Ferndale Street, Penarth Road and Clare Road. Residents highlighted the difficulties this can create for people using pushchairs and mobility scooters, illustrating why pavement obstruction is more than simply an inconvenience.
+                </p>
+
+                <p>
+                    However, a report about parking concerns does not establish that every street has the same problem or that an accident has occurred at a particular location. Each pedestrian injury claim must be assessed using the circumstances and evidence relating to the individual incident.
+                </p>
+
+                <h2 id="common-accidents">Common Ways Pavement Parking Can Cause Pedestrian Accidents</h2>
+
+                <p>
+                    A parked vehicle can create a hazard in several ways, depending on its position, size and the amount of pavement space available. The following situations are particularly relevant when considering pedestrian accidents caused by pavement parking in Cardiff:
+                </p>
+
+                <ul>
+                    <li><strong>Pedestrians Forced Into the Road:</strong> A vehicle blocking most of the footpath may leave pedestrians with no practical option but to walk around it using the carriageway, exposing them to passing traffic.</li>
+
+                    <li><strong>Wheelchair and Mobility Scooter Access:</strong> Vehicles parked across pedestrian routes can prevent wheelchair users and mobility scooter users from passing safely, sometimes forcing them towards the road.</li>
+
+                    <li><strong>Pushchairs and Prams:</strong> Parents may struggle to move a pushchair through a narrow gap between a parked vehicle and a wall, increasing the risk of losing control or entering traffic.</li>
+
+                    <li><strong>Trips and Falls:</strong> Pedestrians attempting to avoid a vehicle may step onto an uneven verge, kerb or damaged surface and suffer a fall.</li>
+
+                    <li><strong>Children Walking Along Residential Streets:</strong> Children may have to move around parked cars without being able to see approaching vehicles clearly, creating a dangerous situation near homes and schools.</li>
+
+                    <li><strong>Blocked Dropped Kerbs:</strong> Vehicles parked across dropped kerbs can prevent people with mobility difficulties from accessing or leaving the pavement safely.</li>
+
+                    <li><strong>Restricted Visibility:</strong> Large vehicles parked close to junctions or crossings can obstruct the view of pedestrians and drivers, making it harder to identify approaching road users.</li>
+
+                    <li><strong>Narrow Routes for Older People:</strong> Older pedestrians who use walking sticks or frames may find it difficult to negotiate narrow gaps or step down onto the road safely.</li>
+                </ul>
+
+                <p>
+                    These situations do not automatically establish that a driver is legally responsible for an injury. The position of the vehicle, the available alternatives, the conduct of other road users and the events leading to the accident all need to be considered. Nevertheless, evidence that a vehicle created an avoidable obstruction can be important when investigating a possible pedestrian injury claim.
+                </p>
+
+                <h2 id="parking-law">What Does the Law Say About Pavement Parking in Wales?</h2>
+
+                <p>
+                    The legal position on pavement parking in Wales needs to be understood carefully. There is not currently a general nationwide prohibition that makes every instance of pavement parking a separate parking offence. However, this does not mean drivers can obstruct pedestrians or ignore other applicable parking restrictions.
+                </p>
+
+                <p>
+                    Highway Code Rule 145 states that drivers must not drive on or over a pavement, footpath or bridleway except to gain lawful access to property or in an emergency. Rule 144 also requires drivers not to drive dangerously, without due care and attention or without reasonable consideration for other road users. These rules are relevant when considering how a driver uses and positions a vehicle around pedestrian areas.
+                </p>
+
+                <p>
+                    Section 137 of the Highways Act 1980 addresses the wilful obstruction of free passage along a highway without lawful authority or excuse. Since a footway forms part of the highway, an obstruction that prevents pedestrians from passing may raise legal concerns. Whether a particular parking situation amounts to an offence depends on the facts and applicable law.
+                </p>
+
+                <p>
+                    The Welsh Government has also acknowledged the difficulties caused by pavement parking. In written answers published in July and August 2026, the Deputy Minister for Transport explained that local authorities and police have different responsibilities for tackling the issue, including the use of obstruction laws, dangerous parking enforcement and Traffic Regulation Orders. The Government also confirmed that officials were considering how to provide local authorities with further powers.
+                </p>
+
+                <p>
+                    This distinction is important for anyone considering pedestrian accident compensation. A parking penalty and a personal injury claim are different matters. Even where a vehicle has received a penalty, an injured pedestrian must still establish the relevant legal responsibility and show that the conduct contributed to their injury.
+                </p>
+
+                <h2 id="cardiff-council">Cardiff Council's Approach to Problem Parking</h2>
+
+                <p>
+                    Cardiff Council provides a process for reporting certain parking problems, including vehicles blocking driveways, disabled parking bays, loading bays, yellow lines and pedestrian dropped kerbs. Its guidance also explains that some parking issues fall under South Wales Police rather than the council's direct enforcement responsibilities. This makes it important to identify the type of obstruction and the applicable local restriction when reporting a problem.
+                </p>
+
+                <p>
+                    The council also lists parking alongside or across a dropped footway as a contravention for which a Penalty Charge Notice may be issued. This matters because dropped kerbs allow wheelchair users and people using powered mobility vehicles to move between the pavement and the road more easily. Blocking these access points can create a serious barrier and may also increase the risk of a pedestrian accident.
+                </p>
+
+                <p>
+                    However, a council parking enforcement decision does not automatically determine who is liable for an injury. A personal injury solicitor may need to investigate whether the vehicle's position, a driver's actions or another party's conduct caused the accident. The circumstances should be assessed separately from any parking complaint or penalty notice.
+                </p>
+
+                <h2 id="responsibility">Who Could Be Responsible for a Pedestrian Accident Caused by Pavement Parking?</h2>
+
+                <p>
+                    Responsibility depends on how the accident happened and which actions contributed to the injuries. The driver who parked the vehicle may be considered if their decision to obstruct the pavement created an avoidable danger. For example, leaving a car across most of a narrow footpath may force pedestrians to enter the carriageway when there is no safe way to pass.
+                </p>
+
+                <p>
+                    A driver travelling along the road may also have responsibility if they fail to observe a pedestrian or do not take reasonable care after the person is forced around an obstruction. In some cases, more than one road user may have contributed to the collision. A solicitor can examine the available evidence to identify the appropriate parties and consider whether responsibility should be shared.
+                </p>
+
+                <p>
+                    There may also be circumstances involving a local authority or another organisation, although this is not automatic. For example, an investigation could consider a relevant highway defect or an applicable traffic restriction if it contributed to the accident. The fact that a collision occurred on a public road does not, by itself, establish council liability.
+                </p>
+
+                <p>
+                    If you are unsure who caused your accident, you do not need to establish legal responsibility before seeking an initial assessment. A personal injury solicitor can consider the details and explain whether further investigation may be appropriate.
+                </p>
+
+                <h2 id="can-you-claim">Can You Make a Pedestrian Accident Claim After a Pavement Parking Incident?</h2>
+
+                <p>
+                    You may be able to pursue a pedestrian accident compensation claim if another party's negligent actions contributed to an accident in which you suffered an injury. This could include a situation where a badly parked vehicle forced you into the road and you were struck by another vehicle. It may also involve a fall caused by an obstruction where the relevant legal responsibility can be established.
+                </p>
+
+                <p>
+                    A claim normally needs evidence connecting the dangerous situation to the accident and the injury. For instance, showing that a vehicle was parked on a pavement may help explain the circumstances, but additional information may be needed to establish how the obstruction contributed to the incident. The severity of the injury, the conduct of the people involved and any possible contributory negligence may also be considered.
+                </p>
+
+                <p>
+                    If you were partly responsible for what happened, this does not necessarily mean you cannot claim. Depending on the circumstances, contributory negligence may reduce the compensation awarded. A solicitor can explain how this principle could affect your particular situation.
+                </p>
+
+                <h2 id="after-accident">What Should You Do After a Pavement Parking Accident in Cardiff?</h2>
+
+                <p>
+                    Your health and safety should be the first priority after an accident. Move away from traffic or any other immediate danger if you can do so safely, and seek medical attention for your injuries. Even injuries that initially appear minor may require medical assessment, particularly if you have suffered a head impact or experience increasing pain.
+                </p>
+
+                <p>
+                    Try to make a note of the accident location, date and time, along with what happened immediately before and after the incident. If a vehicle was obstructing the pavement, record its position and how it affected the available walking space, but only take photographs when it is safe to do so. You may also report the parking problem to the appropriate authority, separately from considering a compensation claim.
+                </p>
+
+                <p>
+                    Keep any medical documents and receipts connected with your injury. These records may help show what treatment you received and whether you experienced financial losses during recovery. If you were unable to collect evidence yourself, a family member or witness may be able to help preserve useful information.
+                </p>
+
+                <h2 id="evidence">What Evidence Could Support a Pavement Parking Accident Claim?</h2>
+
+                <p>
+                    Evidence can help explain why the accident happened, how the parked vehicle affected pedestrian access and which parties may have contributed to the injury. It can also help establish the extent of the harm and the financial consequences of the incident.
+                </p>
+
+                <p>Depending on the circumstances, useful evidence may include:</p>
+
+                <ul>
+                    <li><strong>Photographs and Videos:</strong> Images showing the parked vehicle, remaining pavement width, nearby road layout, dropped kerbs and the location of the accident.</li>
+
+                    <li><strong>CCTV or Dashcam Footage:</strong> Recordings from nearby homes, shops, businesses or passing vehicles that may have captured the incident.</li>
+
+                    <li><strong>Vehicle and Driver Details:</strong> The registration number, vehicle description and available information about the person responsible for parking.</li>
+
+                    <li><strong>Witness Information:</strong> Names and contact details of people who saw the accident or the obstruction before it happened.</li>
+
+                    <li><strong>Police or Incident Reports:</strong> Reference numbers and any reports created after the accident.</li>
+
+                    <li><strong>Medical Records:</strong> Hospital attendance notes, GP records, treatment information and independent medical assessments.</li>
+
+                    <li><strong>Financial Records:</strong> Payslips, invoices, travel receipts and other documents showing expenses or lost earnings connected with the injury.</li>
+                </ul>
+
+                <p>
+                    Evidence should be preserved as early as reasonably possible because CCTV recordings may be overwritten and vehicles can be moved. A solicitor may be able to help request relevant footage and investigate other available records. You should not delay seeking legal advice simply because you were unable to obtain every document immediately after the accident.
+                </p>
+
+                <!-- USER-PROVIDED IMAGE HTML -->
+                <div class="article-image-wrap">
+                    <div style="text-align: center; margin: 40px 0;">
+                        <a href="https://pedestrianaccidentclaimsukco.uk/near-me/cardiff/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           style="display: inline-block; width: 100%; max-width: 1200px;">
+                            <img
+                                src="https://i.postimg.cc/vmz9KfNZ/images-2026-11-01T061733-038.jpg"
+                                alt="Pedestrian Accident Claims in Cardiff"
+                                style="display: block; width: 100%; max-width: 1200px; height: auto; aspect-ratio: 1200 / 700; margin: 0 auto;"
+                                loading="lazy"
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <h2 id="compensation">What Compensation Could a Pedestrian Accident Claim Include?</h2>
+
+                <p>
+                    The compensation available depends on the nature of the injury, the recovery period and the effect the accident has had on your daily life. There is no fixed amount for pedestrian accidents caused by pavement parking in Cardiff. Each claim is assessed individually using medical evidence and information about the losses resulting from the incident.
+                </p>
+
+                <p>
+                    General damages may compensate for pain, suffering and loss of amenity. This can include physical discomfort, emotional effects and limitations on everyday activities. A pedestrian who suffers a fractured leg after being struck by a vehicle may, for example, experience difficulties walking, working, driving or managing household responsibilities during recovery.
+                </p>
+
+                <p>
+                    Special damages may cover eligible financial losses caused by the injury. These can include lost earnings, medical expenses, physiotherapy, rehabilitation, travel costs and reasonable care or assistance. Where an injury causes long-term difficulties, future treatment, care requirements and loss of earning capacity may also need to be assessed.
+                </p>
+
+                <p>
+                    Medical evidence is important when valuing these losses. The aim is to consider the actual impact of the accident rather than assume that everyone with the same type of injury will receive the same compensation.
+                </p>
+
+                <h2 id="time-limit">How Long Do You Have to Make a Pedestrian Accident Claim in Cardiff?</h2>
+
+                <p>
+                    In England and Wales, personal injury claims are generally subject to a three-year limitation period under the Limitation Act 1980. This usually runs from the date of the accident, although the date of knowledge may be relevant in certain cases. Different rules apply to children and people who lack the mental capacity to manage their own legal claims.
+                </p>
+
+                <p>
+                    It is sensible to seek advice well before the relevant deadline. Photographs may become unavailable, witnesses may move away and CCTV footage may be deleted. Starting an investigation early can help preserve information that may be important when assessing responsibility.
+                </p>
+
+                <h2 id="solicitor-help">How Can a Solicitor Help With Pedestrian Accident Claims in Cardiff?</h2>
+
+                <p>
+                    A pedestrian accident solicitor can review what happened and explain whether you may have grounds to pursue compensation. This may involve examining the position of the parked vehicle, identifying the driver or other relevant road users, reviewing witness evidence and investigating whether another party's negligence contributed to your injuries.
+                </p>
+
+                <p>
+                    The solicitor can also obtain or review medical evidence to understand the nature of your injuries and expected recovery. They may assess lost earnings, treatment costs, travel expenses and other eligible financial losses. Where appropriate, they can communicate with insurers or other responsible parties and negotiate on your behalf.
+                </p>
+
+                <p>
+                    Pedestrian Accident Claims UK provides a free and confidential initial case check and may connect eligible people with a solicitor from its panel. If your case is accepted under a No Win No Fee agreement, the appointed solicitor should explain the terms, success fee and any potential deductions before you decide whether to proceed.
+                </p>
+
+                <h2 id="faqs">Frequently Asked Questions About Pavement Parking Accidents in Cardiff</h2>
+
+                <h3>Can I Claim If I Was Hit by a Car After Walking Around a Vehicle Parked on the Pavement?</h3>
+
+                <p>
+                    You may be able to claim if the parked vehicle created an obstruction that contributed to you entering the road and being struck by another vehicle. The investigation would consider the actions of the driver who parked the vehicle, the driver involved in the collision and the circumstances immediately before the accident. Liability may depend on whether one or more parties failed to take reasonable care.
+                </p>
+
+                <h3>Is Pavement Parking Illegal in Cardiff?</h3>
+
+                <p>
+                    The legal position is not a simple blanket prohibition covering every instance of pavement parking in Wales. Obstructive or dangerous parking may be dealt with under existing laws, while specific restrictions and dropped-kerb rules can also apply. The circumstances and the relevant local restrictions need to be considered.
+                </p>
+
+                <h3>Can Wheelchair Users Claim After an Accident Caused by a Blocked Pavement?</h3>
+
+                <p>
+                    A wheelchair user may be able to claim if an obstruction caused an accident and another party's negligence contributed to the injury. For example, a vehicle blocking a footpath may force someone to use an unsuitable surface or enter the carriageway. The evidence and the precise circumstances will determine whether a claim may proceed.
+                </p>
+
+                <h3>Can I Claim If I Fell While Trying to Avoid a Pavement-Parked Vehicle?</h3>
+
+                <p>
+                    You may have grounds for a claim if the obstruction caused you to take an unsafe route and you suffered an injury as a result. The investigation may examine the vehicle's position, the condition of the alternative route and whether the person or organisation responsible failed to take reasonable care. Photographs and witness information may help explain what happened.
+                </p>
+
+                <h3>What Happens If More Than One Driver Was Responsible for My Accident?</h3>
+
+                <p>
+                    More than one road user may share responsibility depending on how the accident occurred. For example, the driver who created the obstruction and another driver who struck the pedestrian may both need to be considered. A solicitor can review the evidence and explain how shared liability could affect the claim.
+                </p>
+
+                <h3>Can I Make a No Win No Fee Pedestrian Accident Claim in Cardiff?</h3>
+
+                <p>
+                    A solicitor from our panel may offer a No Win No Fee agreement if your case meets the relevant requirements. This generally means you will not pay the solicitor's service fees upfront or if the claim fails, subject to the agreement's terms. Any success fee and potential deductions should be explained before you agree to proceed.
+                </p>
+
+                <h2 id="conclusion">Conclusion: Getting Help After a Pavement Parking Accident in Cardiff</h2>
+
+                <p>
+                    Pavement parking can create serious difficulties for pedestrians when vehicles block footpaths, restrict wheelchair access or force people to walk close to moving traffic. An accident may result in physical injuries, financial losses and disruption to everyday life. If you were injured because a parked vehicle or another road user's actions created an unsafe situation in Cardiff, it may be worth exploring whether you have grounds to seek compensation.
+                </p>
+
+                <p>
+                    Contact Pedestrian Accident Claims UK for a free and confidential case check. Where appropriate, our service can connect you with an experienced personal injury solicitor from our panel who can review the circumstances and explain your options. Seeking advice early may also help preserve CCTV footage, witness information and other evidence relevant to your pedestrian accident claim.
+                </p>
+
+                <!-- CLOSING CTA -->
+                <div class="closing-section">
+                    <span class="closing-kicker">Cardiff / Pedestrian Injury Support</span>
+
+                    <h2>Explore Your Pedestrian Accident Claim Options</h2>
+
+                    <p>
+                        Contact Pedestrian Accident Claims UK for a free and confidential case check.
+                        Where appropriate, eligible claimants can be connected with a personal injury
+                        solicitor from our panel to discuss their circumstances and possible next steps. For more information, please visit <a href="https://shah-sahb123.github.io/pedestrianaccidentclaimslondon/">Github</a>, <a href="https://pedestriansaccidentclaims.lovable.app/">Lovable</a>, <a href="https://pedestriansaccidentclaimsmanchester.bitbucket.io/">Bitbucket</a>, and <a href="https://pedestrianaccidentclaimsuk.netlify.app/">Netlify</a>.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- =========================================
+             ARTICLE TABLE OF CONTENTS
+        ========================================== -->
+
+        <aside class="sidebar">
+            <div class="sidebar-panel">
+
+                <p class="sidebar-overline">Explore the Article</p>
+                <h2>On This Page</h2>
+
+                <nav class="sidebar-links" aria-label="Article table of contents">
+                    <a href="#what-is-pavement-parking">What Is Pavement Parking?</a>
+                    <a href="#cardiff-residential-areas">Cardiff Residential Areas</a>
+                    <a href="#common-accidents">Common Accident Causes</a>
+                    <a href="#parking-law">Pavement Parking Law</a>
+                    <a href="#cardiff-council">Cardiff Council Guidance</a>
+                    <a href="#responsibility">Who Could Be Responsible?</a>
+                    <a href="#can-you-claim">Making a Claim</a>
+                    <a href="#after-accident">What to Do After an Accident</a>
+                    <a href="#evidence">Evidence for Your Claim</a>
+                    <a href="#compensation">Compensation</a>
+                    <a href="#time-limit">Claim Time Limit</a>
+                    <a href="#solicitor-help">Solicitor Support</a>
+                    <a href="#faqs">Frequently Asked Questions</a>
+                    <a href="#conclusion">Conclusion</a>
+                </nav>
+
+                <div class="sidebar-callout">
+                    <span>Remember</span>
+                    <p>
+                        Your safety comes first. Do not put yourself at risk to photograph
+                        an obstruction or collect evidence after an accident.
+                    </p>
+                </div>
+
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- =========================================
+         CUSTOM FOOTER
+    ========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-main">
+
+                <div class="footer-left">
+
+                    <div class="footer-brand">
+                        <div class="footer-logo">+</div>
+                        <h2>Pedestrian Accident Claims UK</h2>
+                    </div>
+
+                    <p class="footer-description">
+                        Helping pedestrians understand their options after an accident.
+                        Our service provides a free and confidential initial case check
+                        and may connect eligible claimants with a personal injury solicitor
+                        from our panel.
+                    </p>
+
+                </div>
+
+                <div class="footer-right">
+                    <h3>Cardiff Pedestrian Claims</h3>
+
+                    <p>
+                        Find out more about pedestrian accident claims involving blocked
+                        footpaths, pavement parking, road traffic collisions and other
+                        hazards affecting people walking in Cardiff and surrounding areas.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>© Pedestrian Accident Claims UK. All rights reserved.</span>
+                <span class="footer-tagline">Pedestrian Safety / Legal Information</span>
+            </div>
+
+        </div>
+
+    </footer>
+
+</div>
+</body>
+</html>
